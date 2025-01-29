@@ -1,6 +1,6 @@
-package newproject;
+package Chapter12;
 
-class Vehicle { // name of cars
+class Vehicle {
     String name;
 
     public Vehicle(String name) {
@@ -8,7 +8,7 @@ class Vehicle { // name of cars
     }
 
     public void display() {
-        System.out.println("The name of the car is " + name);
+        System.out.println("The name of the car is: " + name);
     }
 }
 
@@ -24,7 +24,8 @@ class Car extends Vehicle {
 
     public void display() {
         super.display();
-        System.out.println("The no. of doors is " + doors + "\nThe type of fuel used is " + fuel);
+        System.out.println("Number of doors: " + doors);
+        System.out.println("Fuel type: " + fuel);
     }
 }
 
@@ -40,7 +41,8 @@ class ElectricCar extends Car {
 
     public void display() {
         super.display();
-        System.out.println("Battery capacity is " + batteryCap + "\nRange Per change is " + rangePerChange);
+        System.out.println("Battery capacity: " + batteryCap);
+        System.out.println("Range per charge: " + rangePerChange);
     }
 }
 
